@@ -626,3 +626,5 @@
 >!>^Left::send,{Media_Prev}
 >!>^Right::send,{Media_Next}
 >!>^Space::send,{Media_Play_Pause}
+#;::run D:\墨抒颖\code\AHK\myAHK\KeyboardOnScreen.ahk
+CapsLock & esc::!F4
