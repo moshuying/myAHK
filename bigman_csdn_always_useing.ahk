@@ -420,12 +420,12 @@
     Return
     ;打开www文件夹
     CapsLock & z::
-        www=D:\墨抒颖\code\HTML\工具箱
+        www=E:\msy\code\HTML\工具箱
         run %www%
     Return
     ;打开我的手册
     CapsLock & x::
-        handnote=D:\墨抒颖\code
+        handnote=E:\msy\code
         run %handnote%
     Return
 
@@ -626,5 +626,5 @@
 >!>^Left::send,{Media_Prev}
 >!>^Right::send,{Media_Next}
 >!>^Space::send,{Media_Play_Pause}
-#;::run D:\墨抒颖\code\AHK\myAHK\KeyboardOnScreen.ahk
+#;::run E:\msy\code\AHK\myAHK\KeyboardOnScreen.ahk
 +esc::!F4
