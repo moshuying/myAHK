@@ -628,3 +628,16 @@
 >!>^Space::send,{Media_Play_Pause}
 #;::run E:\msy\code\AHK\myAHK\KeyboardOnScreen.ahk
 +esc::!F4
+; 加入左键连点器
++F11::
+	Sleep,300
+	loop
+	{
+		Send,{Click}
+		Sleep,70
+		if GetKeyState("F11")
+		{
+			break
+		}
+	}
+return
