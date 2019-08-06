@@ -12,6 +12,8 @@
     ;||        f                |        右键                 ||
     ;||        ikjl             |      鼠标移动               ||
     ;|+=======================================================+|
+    ;inurl:/ConfigurePortalPages!default.jspa?view=popular
+    MsgBox,  0, 模拟鼠标, 模拟鼠标开启成功, 0.2
     #SingleInstance
     count = 0
     JoyMultiplier = 0.20
@@ -628,11 +630,13 @@
     >!>^Left::send,{Media_Prev}
     >!>^Right::send,{Media_Next}
     >!>^Space::send,{Media_Play_Pause}
-    ; 扩展按键显示
+; 扩展按键显示
+    MsgBox,  0, 扩展按键, 扩展按键开启成功, 0.2
     #;::run KeyboardOnScreen.ahk
     +esc::!F4
 ; 加入左键连点器
     +F11::
+    MsgBox,  0, 左键连点器, 左键连点器开启成功, 0.2
         Sleep,300
         loop
         {
@@ -646,7 +650,15 @@
     return
 ; 开启截图工具
     ; countsnipase=0
-    #^w::
+    ^F12::
         run snipase\Snipaste.exe
+        MsgBox,  0, snipase, Snipaste开启成功, 0.2
+        ; countsnipase:=countsnipase+1
+    return
+; 开启SS工具
+    ; countsnipase=0
+    ^F11::
+        run ss\Shadowsocks.exe
+        MsgBox, 0, Shadowsocks, Shadowsocks开启成功, 0.2
         ; countsnipase:=countsnipase+1
     return
