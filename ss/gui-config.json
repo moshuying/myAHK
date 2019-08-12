@@ -15,7 +15,7 @@
   ],
   "strategy": null,
   "index": 0,
-  "global": true,
+  "global": false,
   "enabled": true,
   "shareOverLan": false,
   "isDefault": false,

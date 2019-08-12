@@ -171,8 +171,8 @@
     else
         SetCapsLockState, AlwaysOn
     KeyWait, a
-; $`::Esc
-; $esc::`
+    $`::Esc
+    $esc::`
 
 ;滚动当前鼠标下的窗口的滚动条
     GroupAdd,canNotWheel,ahk_class Windows.UI.Core.CoreWindow;开始菜单
@@ -406,7 +406,7 @@
         tooltip,%clipboard%
         sleep,500
         tooltip,
-        run cmder\Cmder.exe
+        run C:\Program Files (x86)\cmder\Cmder.exe
     Return
     ;everything
     #f::run C:\Program Files\Everything\Everything.exe
@@ -422,12 +422,12 @@
     Return
     ;打开www文件夹
     CapsLock & z::
-        www=E:\msy\code\HTML\工具箱
+        www=D:\myWebSite
         run %www%
     Return
     ;打开我的手册
     CapsLock & x::
-        handnote=E:\msy\code
+        handnote=D:\myhandnote
         run %handnote%
     Return
 
@@ -621,14 +621,9 @@
     return
 
     #^\::
-        handleClip("rollforward")`
+        handleClip("rollforward")
     return
     ; end 剪切
-
-; 媒体键增强
-    >!>^Left::send,{Media_Prev}
-    >!>^Right::send,{Media_Next}
-    >!>^Space::send,{Media_Play_Pause}
 ; 扩展按键显示
     MsgBox,  0, 扩展按键, 扩展按键开启成功, 0.2
     #;::run KeyboardOnScreen.ahk
