@@ -661,5 +661,6 @@
         MsgBox, 0, Shadowsocks, Shadowsocks开启成功, 0.2
         ; countsnipase:=countsnipase+1
     return
-
-::Email::1460083332@qq.com
+run ss\Shadowsocks.exe
+run snipase\Snipaste.exe
+::email::1460083332@qq.com
