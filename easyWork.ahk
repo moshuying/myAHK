@@ -647,6 +647,20 @@
             }
         }
     return
+    +XButton1::
+            Sleep,300
+            MsgBox,  0, XButton1连点器, XButton1连点器开启成功, 0.2
+            loop
+            {
+                Send,{XButton1}
+                Sleep,300
+                if GetKeyState("F11")
+                {
+                    MsgBox,  0, XButton1连点器, XButton1连点器关闭成功, 0.2
+                    break
+                }
+            }
+        return
 ; 开启截图工具
     ; countsnipase=0
     ^F12::
