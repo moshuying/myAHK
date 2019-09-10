@@ -365,8 +365,8 @@
         #if
 
     ;鼠标控制音量
-        XButton1::Volume_Up
-        XButton2::Volume_Down
+        ; XButton1::Volume_Up
+        ; XButton2::Volume_Down
         XButton2 & WheelDown::send,{Volume_Down}
         XButton2 & WheelUp::send,{Volume_Up}
         CapsLock & PgUp::send,{Volume_Up}

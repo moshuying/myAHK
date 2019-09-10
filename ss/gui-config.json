@@ -3,6 +3,17 @@
   "configs": [
     {
       "server": "149.129.116.129",
+      "server_port": 39831,
+      "password": "1234566",
+      "method": "aes-256-cfb",
+      "plugin": "",
+      "plugin_opts": "",
+      "plugin_args": "",
+      "remarks": "",
+      "timeout": 15
+    },
+    {
+      "server": "149.129.116.129",
       "server_port": 12633,
       "password": "123456",
       "method": "aes-256-cfb",
@@ -14,13 +25,13 @@
     }
   ],
   "strategy": null,
-  "index": 0,
+  "index": 1,
   "global": false,
   "enabled": true,
   "shareOverLan": false,
   "isDefault": false,
   "isIPv6Enabled": false,
-  "localPort": 23564,
+  "localPort": 231,
   "portableMode": false,
   "pacUrl": null,
   "useOnlinePac": false,
