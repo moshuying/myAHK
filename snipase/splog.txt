@@ -1,0 +1,202 @@
+[2019-09-15 17:35:02.103] [I] ***************************************************************
+[2019-09-15 17:35:02.103] [I] Snipaste 2.2.1-Beta2 x64 (Desktop) (Qt 5.9.0)
+[2019-09-15 17:35:02.103] [I] OS: Windows 10 (10.0) [10.0.18362]
+[2019-09-15 17:35:02.103] [I] Cores: 4
+[2019-09-15 17:35:02.103] [I] Elevated: false
+[2019-09-15 17:35:02.103] [I] Main thread id: 0x4028
+[2019-09-15 17:35:02.103] [I] Log level: 2
+[2019-09-15 17:35:02.103] [I] Application dir: D:/msy/mygit/myAHK/snipase
+[2019-09-15 17:35:02.104] [I] Working dir: D:/msy/mygit/myAHK
+[2019-09-15 17:35:02.104] [I] Config: D:/msy/mygit/myAHK/snipase/config.ini
+[2019-09-15 17:35:02.104] [I] Library paths: (D:/msy/mygit/myAHK/snipase)
+[2019-09-15 17:35:02.104] [I] Screen scale: 1
+[2019-09-15 17:35:02.104] [I] Retina factor: 1
+[2019-09-15 17:35:02.104] [I] Screens: 1
+[2019-09-15 17:35:02.104] [I]     QRect(0, 0, 1920 x 1080), DPI = 96 , DPR = 1
+[2019-09-15 17:35:02.104] [I] About to import settings from: D:/msy/mygit/myAHK/snipase/config.ini
+[2019-09-15 17:35:02.220] [I] Settings imported
+[2019-09-15 17:35:02.226] [I] Breakpad initialized
+[2019-09-15 17:35:02.229] [I] Process priority: 1
+[2019-09-15 17:35:02.229] [I] Initializing Snipaste...
+[2019-09-15 17:35:04.376] [I] Prefetch...
+[2019-09-15 17:35:04.380] [I] About to apply settings...
+[2019-09-15 17:35:04.400] [I] Preloaded 20 files: 24 ms
+[2019-09-15 17:35:05.315] [I] Settings applied
+[2019-09-15 17:35:05.825] [I] Load default ssl configuration: 1425 ms
+[2019-09-15 17:35:05.828] [I] Log level set to: 2
+[2019-09-15 17:35:06.185] [I] History dir: D:/msy/mygit/myAHK/snipase/history
+[2019-09-15 17:35:06.190] [W] Failed to open history file "D:/msy/mygit/myAHK/snipase/history/.sp0" for reading
+[2019-09-15 17:35:06.191] [I] Add group
+[2019-09-15 17:35:06.520] [I] Request to switch to group 0
+[2019-09-15 17:35:06.694] [I] About to restore pasters...
+[2019-09-15 17:35:06.694] [I] Group 0 [4OPOXC]: "默认"
+[2019-09-15 17:35:06.694] [I] Record version: 169
+[2019-09-15 17:35:06.694] [I] To restore: 0
+[2019-09-15 17:35:06.694] [I] Pasters touched
+[2019-09-15 17:35:06.694] [I] All pasters activated: true
+[2019-09-15 17:35:06.718] [I] Unref images: 0 (0 removed)
+[2019-09-15 17:35:06.719] [I] Unref dirs: 0 (0 removed)
+[2019-09-15 17:35:06.719] [I] Empty history info files: 0 (0 removed)
+[2019-09-15 17:35:06.719] [I] Pasters restored
+[2019-09-15 17:35:06.722] [I] Launch time: 4633 ms
+[2019-09-15 17:36:07.732] [I] Silent feed checking finished
+[2019-09-15 17:36:07.732] [I] No available update
+[2019-09-15 17:44:27.180] [I] Preloaded 20 files: 958 ms [every 9.3 m]
+[2019-09-15 17:51:27.609] [I] Preloaded 20 files: 432 ms [every 7.0 m]
+[2019-09-15 17:56:43.346] [I] Preloaded 20 files: 729 ms [every 5.3 m]
+[2019-09-15 18:00:40.225] [I] Preloaded 20 files: 880 ms [every 3.9 m]
+[2019-09-15 18:03:37.545] [I] Preloaded 20 files: 321 ms [every 3.0 m]
+[2019-09-15 18:05:50.863] [I] Preloaded 20 files: 312 ms [every 2.2 m]
+[2019-09-15 18:07:30.877] [I] Preloaded 20 files: 15 ms [every 1.7 m]
+[2019-09-15 18:09:35.894] [I] Preloaded 20 files: 11 ms [every 2.1 m]
+[2019-09-15 18:12:11.905] [I] Preloaded 20 files: 11 ms [every 2.6 m]
+[2019-09-15 18:15:27.533] [I] Preloaded 20 files: 626 ms [every 3.2 m]
+[2019-09-15 18:17:55.011] [I] Preloaded 20 files: 1480 ms [every 2.4 m]
+[2019-09-15 18:19:45.285] [I] Preloaded 20 files: 284 ms [every 1.8 m]
+[2019-09-15 18:21:07.299] [I] Preloaded 20 files: 14 ms [every 1.4 m]
+[2019-09-15 18:22:50.318] [I] Preloaded 20 files: 19 ms [every 1.7 m]
+[2019-09-15 18:24:58.329] [I] Preloaded 20 files: 12 ms [every 2.1 m]
+[2019-09-15 18:27:39.651] [I] Preloaded 20 files: 320 ms [every 2.7 m]
+[2019-09-15 18:29:39.896] [I] Preloaded 20 files: 255 ms [every 2.0 m]
+[2019-09-15 18:31:10.252] [I] Preloaded 20 files: 360 ms [every 1.5 m]
+[2019-09-15 18:32:18.264] [I] Preloaded 20 files: 11 ms [every 1.1 m]
+[2019-09-15 18:33:43.287] [I] Preloaded 20 files: 16 ms [every 1.4 m]
+[2019-09-15 18:35:29.617] [I] Preloaded 20 files: 335 ms [every 1.8 m]
+[2019-09-15 18[2019-09-15 20:28:20.453] [I] ***************************************************************
+[2019-09-15 20:28:20.453] [I] Snipaste 2.2.1-Beta2 x64 (Desktop) (Qt 5.9.0)
+[2019-09-15 20:28:20.453] [I] OS: Windows 10 (10.0) [10.0.18362]
+[2019-09-15 20:28:20.453] [I] Cores: 4
+[2019-09-15 20:28:20.453] [I] Elevated: false
+[2019-09-15 20:28:20.453] [I] Main thread id: 0x66b4
+[2019-09-15 20:28:20.453] [I] Log level: 2
+[2019-09-15 20:28:20.453] [I] Application dir: D:/msy/mygit/myAHK/snipase
+[2019-09-15 20:28:20.453] [I] Working dir: D:/msy/mygit/myAHK
+[2019-09-15 20:28:20.453] [I] Config: D:/msy/mygit/myAHK/snipase/config.ini
+[2019-09-15 20:28:20.453] [I] Library paths: (D:/msy/mygit/myAHK/snipase)
+[2019-09-15 20:28:20.453] [I] Screen scale: 1
+[2019-09-15 20:28:20.453] [I] Retina factor: 1
+[2019-09-15 20:28:20.453] [I] Screens: 1
+[2019-09-15 20:28:20.453] [I]     QRect(0, 0, 1920 x 1080), DPI = 96 , DPR = 1
+[2019-09-15 20:28:20.454] [I] About to import settings from: D:/msy/mygit/myAHK/snipase/config.ini
+[2019-09-15 20:28:20.535] [I] Settings imported
+[2019-09-15 20:28:20.537] [I] Breakpad initialized
+[2019-09-15 20:28:20.543] [I] Process priority: 1
+[2019-09-15 20:28:20.543] [I] Initializing Snipaste...
+[2019-09-15 20:28:21.622] [I] Prefetch...
+[2019-09-15 20:28:21.626] [I] About to apply settings...
+[2019-09-15 20:28:21.708] [I] Preloaded 20 files: 87 ms
+[2019-09-15 20:28:22.560] [I] Settings applied
+[2019-09-15 20:28:22.683] [I] Log level set to: 2
+[2019-09-15 20:28:22.756] [I] Load default ssl configuration: 1134 ms
+[2019-09-15 20:28:22.785] [I] History dir: D:/msy/mygit/myAHK/snipase/history
+[2019-09-15 20:28:22.827] [I] Header version: 169
+[2019-09-15 20:28:22.827] [I] About to restore pasters...
+[2019-09-15 20:28:22.828] [I] Group 0 [4OPOXC]: "默认"
+[2019-09-15 20:28:22.828] [I] Record version: 169
+[2019-09-15 20:28:22.828] [I] To restore: 0
+[2019-09-15 20:28:22.828] [I] Pasters touched
+[2019-09-15 20:28:22.828] [I] All pasters activated: true
+[2019-09-15 20:28:22.887] [I] Unref images: 0 (0 removed)
+[2019-09-15 20:28:22.887] [I] Unref dirs: 0 (0 removed)
+[2019-09-15 20:28:22.888] [I] Empty history info files: 0 (0 removed)
+[2019-09-15 20:28:22.888] [I] Pasters restored
+[2019-09-15 20:28:22.888] [I] Launch time: 2441 ms
+[2019-09-15 20:28:23.066] [I] Parsing command arguments [1]: (sp, snip)
+[2019-09-15 20:28:23.066] [I] Snip request: 0 (dest: 0)
+[2019-09-15 20:28:23.066] [I] Snipper: preparing...
+[2019-09-15 20:28:23.146] [I] Screens: 1
+[2019-09-15 20:28:23.146] [I]     QRect(0, 0, 1920 x 1080), DPI = 96 , DPR = 1
+[2019-09-15 20:28:23.146] [I] Desktop: QRect(0, 0, 1920 x 1080)
+[2019-09-15 20:28:23.146] [I] Background size: QSize(1920, 1080)
+[2019-09-15 20:28:23.156] [I] Focus set
+[2019-09-15 20:28:23.224] [I] Snipper: preparation done (0)
+[2019-09-15 20:28:23.224] [I] Snipper: about to appear...
+[2019-09-15 20:28:23.224] [I] Snipper: prepare to show...
+[2019-09-15 20:28:23.318] [I] Snipper: shown
+[2019-09-15 20:28:23.320] [I] Snipper: focus in
+[2019-09-15 20:28:23.320] [I] Snipper: ready [0.253 s]
+[2019-09-15 20:28:27.930] [I] Screenshot destination: pin, 
+[2019-09-15 20:28:27.931] [I] Paste image: QPoint(1028, 867)
+[2019-09-15 20:28:27.945] [I] Screenshot successfully saved: pin, 
+[2019-09-15 20:28:27.945] [I] Snipper: about to quit...
+[2019-09-15 20:28:28.460] [I] Snipper: focus out [3]
+[2019-09-15 20:28:28.461] [I] Snipper: hidden
+[2019-09-15 20:28:28.463] [I] Snipper: quit
+[2019-09-15 20:28:28.826] [I] Snipper: scene saved
+[2019-09-15 20:29:23.634] [I] Silent feed checking finished
+[2019-09-15 20:29:23.634] [I] No available update
+[2019-09-15 20:29:26.824] [I] Preloaded 20 files: 37 ms [every 1.1 m]
+[2019-09-15 20:30:47.845] [I] Preloaded 20 files: 1024 ms [every 1.3 m]
+[2019-09-15 20:31:48.805] [I] Preloaded 20 files: 958 ms [every 1.0 m]
+[2019-09-15 20:32:49.616] [I] Preloaded 20 files: 819 ms [every 1.0 m]
+[2019-09-15 20:33:49.624] [I] Preloaded 20 files: 14 ms [every 1.0 m]
+[2019-09-15 20:35:04.643] [I] Preloaded 20 files: 12 ms [every 1.3 m][2019-09-17 11:29:07.993] [I] ***************************************************************
+[2019-09-17 11:29:07.993] [I] Snipaste 2.2.1-Beta2 x64 (Desktop) (Qt 5.9.0)
+[2019-09-17 11:29:07.993] [I] OS: Windows 10 (10.0) [10.0.18362]
+[2019-09-17 11:29:07.993] [I] Cores: 4
+[2019-09-17 11:29:07.993] [I] Elevated: false
+[2019-09-17 11:29:07.993] [I] Main thread id: 0x69e4
+[2019-09-17 11:29:07.993] [I] Log level: 2
+[2019-09-17 11:29:07.993] [I] Application dir: D:/msy/mygit/myAHK/snipase
+[2019-09-17 11:29:07.993] [I] Working dir: D:/msy/mygit/myAHK
+[2019-09-17 11:29:07.993] [I] Config: D:/msy/mygit/myAHK/snipase/config.ini
+[2019-09-17 11:29:07.993] [I] Library paths: (D:/msy/mygit/myAHK/snipase)
+[2019-09-17 11:29:07.993] [I] Screen scale: 1
+[2019-09-17 11:29:07.993] [I] Retina factor: 1
+[2019-09-17 11:29:07.993] [I] Screens: 1
+[2019-09-17 11:29:07.993] [I]     QRect(0, 0, 1920 x 1080), DPI = 96 , DPR = 1
+[2019-09-17 11:29:07.993] [I] About to import settings from: D:/msy/mygit/myAHK/snipase/config.ini
+[2019-09-17 11:29:09.450] [I] Settings imported
+[2019-09-17 11:29:09.451] [I] Breakpad initialized
+[2019-09-17 11:29:09.453] [I] Process priority: 1
+[2019-09-17 11:29:09.453] [I] Initializing Snipaste...
+[2019-09-17 11:29:10.458] [I] Prefetch...
+[2019-09-17 11:29:10.462] [I] About to apply settings...
+[2019-09-17 11:29:10.480] [I] Preloaded 20 files: 22 ms
+[2019-09-17 11:29:10.870] [I] Settings applied
+[2019-09-17 11:29:10.944] [I] Log level set to: 2
+[2019-09-17 11:29:11.179] [I] History dir: D:/msy/mygit/myAHK/snipase/history
+[2019-09-17 11:29:11.187] [I] Header version: 169
+[2019-09-17 11:29:11.194] [I] About to restore pasters...
+[2019-09-17 11:29:11.200] [I] Group 0 [4OPOXC]: "默认"
+[2019-09-17 11:29:11.201] [I] Record version: 169
+[2019-09-17 11:29:11.201] [I] To restore: 0
+[2019-09-17 11:29:11.201] [I] Pasters touched
+[2019-09-17 11:29:11.201] [I] All pasters activated: true
+[2019-09-17 11:29:11.416] [I] Unref images: 0 (0 removed)
+[2019-09-17 11:29:11.416] [I] Unref dirs: 0 (0 removed)
+[2019-09-17 11:29:11.426] [I] Empty history info files: 0 (0 removed)
+[2019-09-17 11:29:11.426] [I] Pasters restored
+[2019-09-17 11:29:11.426] [I] Launch time: 3441 ms
+[2019-09-17 11:29:11.534] [I] Load default ssl configuration: 1075 ms
+[2019-09-17 11:29:12.762] [I] Parsing command arguments [1]: (sp, snip)
+[2019-09-17 11:29:12.762] [I] Snip request: 0 (dest: 0)
+[2019-09-17 11:29:12.762] [I] Snipper: preparing...
+[2019-09-17 11:29:12.814] [I] Screens: 1
+[2019-09-17 11:29:12.814] [I]     QRect(0, 0, 1920 x 1080), DPI = 96 , DPR = 1
+[2019-09-17 11:29:12.814] [I] Desktop: QRect(0, 0, 1920 x 1080)
+[2019-09-17 11:29:12.814] [I] Background size: QSize(1920, 1080)
+[2019-09-17 11:29:12.832] [I] Focus set
+[2019-09-17 11:29:12.848] [I] Snipper: preparation done (0)
+[2019-09-17 11:29:12.848] [I] Snipper: about to appear...
+[2019-09-17 11:29:12.848] [I] Snipper: prepare to show...
+[2019-09-17 11:29:12.852] [I] Snipper: shown
+[2019-09-17 11:29:12.853] [I] Snipper: focus in
+[2019-09-17 11:29:12.854] [I] Snipper: ready [0.092 s]
+[2019-09-17 11:29:19.338] [I] Screenshot destination: clipboard, 
+[2019-09-17 11:29:19.346] [I] Screenshot successfully saved: clipboard, 
+[2019-09-17 11:29:19.346] [I] Snipper: about to quit...
+[2019-09-17 11:29:19.380] [I] Snipper: focus out [3]
+[2019-09-17 11:29:19.387] [I] Snipper: hidden
+[2019-09-17 11:29:19.387] [I] Snipper: quit
+[2019-09-17 11:29:19.607] [I] Snipper: scene saved
+[2019-09-17 11:30:12.738] [I] Silent feed checking finished
+[2019-09-17 11:30:12.738] [I] No available update
+[2019-09-17 11:36:52.489] [I] Preloaded 20 files: 323 ms [every 7.7 m]
+[2019-09-17 11:42:00.906] [I] Parsing command arguments [1]: (sp, snip)
+[2019-09-17 11:42:00.906] [I] Snip request: 0 (dest: 0)
+[2019-09-17 11:42:00.906] [I] Snipper: preparing...
+[2019-09-17 11:42:00.962] [I] Screens: 1
+[2019-09-17 11:42:00.962] [I]     QRect(0, 0, 1920 x 1080), DPI = 96 , DPR = 1
+[2019-09-17 11:42:00.962] [I] Desktop: QRect(0, 0, 1920 x 1080)
+[2019-09-17 11:42:00.962] [I] Backgro
