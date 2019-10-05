@@ -675,6 +675,11 @@
         MsgBox, 0, Shadowsocks, Shadowsocks开启成功, 0.2
         ; countsnipase:=countsnipase+1
     return
-run ss\Shadowsocks.exe
-run snipase\Snipaste.exe
+; 开启SS工具
+    ; countsnipase=0
+    ^F10::
+        run cmder\Cmder.exe
+        MsgBox, 0, Cmder, Cmder, 0.2
+        ; countsnipase:=countsnipase+1
+    return
 ::email::1460083332@qq.com
