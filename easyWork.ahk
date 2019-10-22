@@ -408,24 +408,11 @@
         tooltip,
         run cmder\Cmder.exe
     Return
-    ;everything
-    #f::run C:\Program Files\Everything\Everything.exe
-    ;fastcopy
-    ^#f::run C:\Program Files (x86)\FastCopy\FastCopy.exe
-    ;截图
-    ^+a::run D:\Program Files (x86)\MY_Tools\BaiduSnapshot.exe
-    ;打开我开机要运行的程序
-    CapsLock & F9::
-        run D:\Program Files (x86)\YodaoDict\YodaoDict.exe
-        run D:\Program Files (x86)\MY_Tools\radar.exe
-        run D:\Program Files (x86)\ss\Shadowsocks.exe
-    Return
     ;打开www文件夹
     CapsLock & z::
         www=E:\msy\code\HTML\工具箱
         run %www%
     Return
-    ;打开我的手册
     CapsLock & x::
         handnote=E:\msy\code
         run %handnote%
@@ -440,18 +427,6 @@
             sleep,500
             tooltip,
         return
-    ;拾色器
-        !#c::
-            run D:\Program Files (x86)\MY_Tools\TakeColor.exe
-            ; MouseGetPos, mouseX, mouseY
-            ; PixelGetColor, color, %mouseX%, %mouseY%, RGB
-            ; StringRight color,color,6
-            ; clipboard = #%color%
-            ; tooltip,color is %color%
-            ; sleep 2000
-            ; tooltip,
-        return
-    CapsLock & r:: run D:\Program Files (x86)\MY_Tools\key_record.ahk
 
 ;/**********************简单实用的剪切板*******************/
     ;|+=======================================================+|
@@ -626,8 +601,8 @@
     ; end 剪切
 
 ; 媒体键增强
-    >!>^Left::send,{Media_Prev}
     >!>^Right::send,{Media_Next}
+    >!>^Left::send,{Media_Prev}
     >!>^Space::send,{Media_Play_Pause}
 ; 扩展按键显示
     MsgBox,  0, 扩展按键, 扩展按键开启成功, 0.2
