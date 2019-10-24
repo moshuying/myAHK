@@ -1,6 +1,28 @@
 {
   "version": "4.1.7.1",
   "configs": [
+    {
+      "server": "",
+      "server_port": 8388,
+      "password": "",
+      "method": "aes-256-cfb",
+      "plugin": "",
+      "plugin_opts": "",
+      "plugin_args": "",
+      "remarks": "",
+      "timeout": 5
+    },
+    {
+      "server": "149.248.14.212",
+      "server_port": 52219,
+      "password": "cG9Pc01qQXhPUzB4TUMweU5DMHhNUVdRY1",
+      "method": "aes-256-cfb",
+      "plugin": "",
+      "plugin_opts": "",
+      "plugin_args": "",
+      "remarks": "",
+      "timeout": 5
+    }
   ],
   "strategy": null,
   "index": 1,

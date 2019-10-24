@@ -392,7 +392,7 @@
     ;||   Cap &  r              |         键盘录制            ||
     ;|+=======================================================+|
     ;计算器
-    CapsLock & c::run calc.exe
+
     ;sublime_text
     CapsLock & s::
     if GetKeyState("LALT", "P")
