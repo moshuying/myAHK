@@ -11725,4 +11725,55 @@
 [2019-11-04 15:08:10.483] [I] Snipper: focus out [3]
 [2019-11-04 15:08:10.494] [I] Snipper: hidden
 [2019-11-04 15:08:10.495] [I] Snipper: quit
-[2019-11-04 15:08:1
+[2019-11-04 15:08:1[2019-12-11 10:19:44.920] [I] ***************************************************************
+[2019-12-11 10:19:44.920] [I] Snipaste 2.2.1-Beta2 x64 (Desktop) (Qt 5.9.0)
+[2019-12-11 10:19:44.920] [I] OS: Windows 10 (10.0) [10.0.18362]
+[2019-12-11 10:19:44.920] [I] Cores: 4
+[2019-12-11 10:19:44.920] [I] Elevated: false
+[2019-12-11 10:19:44.920] [I] Main thread id: 0x3c54
+[2019-12-11 10:19:44.920] [I] Log level: 2
+[2019-12-11 10:19:44.920] [I] Application dir: D:/msy/mygit/myAHK/snipase
+[2019-12-11 10:19:44.920] [I] Working dir: D:/msy/mygit/myAHK
+[2019-12-11 10:19:44.920] [I] Config: D:/msy/mygit/myAHK/snipase/config.ini
+[2019-12-11 10:19:44.920] [I] Library paths: (D:/msy/mygit/myAHK/snipase)
+[2019-12-11 10:19:44.920] [I] Screen scale: 1
+[2019-12-11 10:19:44.920] [I] Retina factor: 1
+[2019-12-11 10:19:44.920] [I] Screens: 1
+[2019-12-11 10:19:44.920] [I]     QRect(0, 0, 1920 x 1080), DPI = 96 , DPR = 1
+[2019-12-11 10:19:44.920] [I] About to import settings from: D:/msy/mygit/myAHK/snipase/config.ini
+[2019-12-11 10:19:45.193] [I] Settings imported
+[2019-12-11 10:19:45.197] [I] Breakpad initialized
+[2019-12-11 10:19:45.199] [I] Process priority: 1
+[2019-12-11 10:19:45.199] [I] Initializing Snipaste...
+[2019-12-11 10:19:45.791] [I] Prefetch...
+[2019-12-11 10:19:45.795] [I] About to apply settings...
+[2019-12-11 10:19:45.802] [I] Preloaded 20 files: 10 ms
+[2019-12-11 10:19:46.018] [I] Settings applied
+[2019-12-11 10:19:46.074] [I] Log level set to: 2
+[2019-12-11 10:19:46.184] [I] History dir: D:/msy/mygit/myAHK/snipase/history
+[2019-12-11 10:19:46.190] [I] Header version: 169
+[2019-12-11 10:19:46.190] [I] About to restore pasters...
+[2019-12-11 10:19:46.193] [I] Group 0 [QUJIDT]: "默认"
+[2019-12-11 10:19:46.193] [I] Record version: 169
+[2019-12-11 10:19:46.193] [I] To restore: 0
+[2019-12-11 10:19:46.193] [I] Pasters touched
+[2019-12-11 10:19:46.193] [I] All pasters activated: true
+[2019-12-11 10:19:46.888] [I] Load default ssl configuration: 1097 ms
+[2019-12-11 10:19:47.046] [I] Unref images: 0 (0 removed)
+[2019-12-11 10:19:47.047] [I] Unref dirs: 0 (0 removed)
+[2019-12-11 10:19:47.048] [I] Empty history info files: 0 (0 removed)
+[2019-12-11 10:19:47.048] [I] Pasters restored
+[2019-12-11 10:19:47.048] [I] Launch time: 2130 ms
+[2019-12-11 10:20:03.704] [I] Parsing command arguments [0]: (sp, show-tray-menu)
+[2019-12-11 10:20:07.118] [I] Feed checking finished
+[2019-12-11 10:20:07.118] [I] New version available: 2.2.4-Beta
+[2019-12-11 10:20:16.206] [I] Feed checking finished
+[2019-12-11 10:20:16.206] [I] New version available: 2.2.4-Beta
+[2019-12-11 10:20:24.843] [I] UpdaterDialog destroyed
+[2019-12-11 10:20:26.506] [I] Parsing command arguments [0]: (sp, show-tray-menu)
+[2019-12-11 10:20:27.115] [I] Quit from tray menu
+[2019-12-11 10:20:27.285] [I] Snipaste: normal exit
+[2019-12-11 10:20:27.285] [I] Snipper: destructed
+[2019-12-11 10:20:27.322] [I] Exit: 0
+
+
