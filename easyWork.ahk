@@ -1,4 +1,5 @@
-﻿SetCapsLockState, AlwaysOff
+﻿;开机运行目录 C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+SetCapsLockState, AlwaysOff
 ;***************************模拟鼠标控制*****************************
     ;|+=======================================================+|
     ;||                                                       ||
@@ -171,8 +172,6 @@
     else
         SetCapsLockState, AlwaysOn
     KeyWait, a
-; $`::Esc
-; $esc::`
 
 ;滚动当前鼠标下的窗口的滚动条
     GroupAdd,canNotWheel,ahk_class Windows.UI.Core.CoreWindow;开始菜单
@@ -391,30 +390,24 @@
     ;||      !#c                |         拾色器              ||
     ;||   Cap &  r              |         键盘录制            ||
     ;|+=======================================================+|
-    ;计算器
 
-    ;sublime_text
-    CapsLock & s::
-    if GetKeyState("LALT", "P")
-        run sublime_text
-    Return
     ;cmder
-    #t::
-        send ^c
-        sleep,200
-        clipboard=cd %clipboard% ;%null%
-        tooltip,%clipboard%
-        sleep,500
-        tooltip,
-        run cmder\Cmder.exe
-    Return
+    ; #t::
+    ;     send ^c
+    ;     sleep,200
+    ;     clipboard=cd %clipboard% ;%null%
+    ;     tooltip,%clipboard%
+    ;     sleep,500
+    ;     tooltip,
+    ;     run cmder\Cmder.exe
+    ; Return
     ;打开www文件夹
     CapsLock & z::
-        www=E:\msy\code\HTML\工具箱
+        www=D:\msy\code\node\HTML\工具箱
         run %www%
     Return
     CapsLock & x::
-        handnote=E:\msy\code
+        handnote=D:\msy\mygit
         run %handnote%
     Return
 
@@ -607,7 +600,7 @@
 ; 扩展按键显示
     MsgBox,  0, 扩展按键, 扩展按键开启成功, 0.2
     #;::run KeyboardOnScreen.ahk
-    +esc::!F4
+    + & esc::!F4
 ; 加入左键连点器
     +F11::
     MsgBox,  0, 左键连点器, 左键连点器开启成功, 0.2
@@ -636,25 +629,5 @@
                 }
             }
         return
-; 开启截图工具
-    ; countsnipase=0
-    ^F12::
-        run snipase\Snipaste.exe
-        MsgBox,  0, snipase, Snipaste开启成功, 0.2
-        ; countsnipase:=countsnipase+1
-    return
-; 开启SS工具
-    ; countsnipase=0
-    ^F11::
-        run ss\Shadowsocks.exe
-        MsgBox, 0, Shadowsocks, Shadowsocks开启成功, 0.2
-        ; countsnipase:=countsnipase+1
-    return
-; 开启SS工具
-    ; countsnipase=0
-    ^F10::
-        run cmder\Cmder.exe
-        MsgBox, 0, Cmder, Cmder, 0.2
-        ; countsnipase:=countsnipase+1
-    return
+
 ::email::1460083332@qq.com
