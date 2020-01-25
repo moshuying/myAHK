@@ -1,5 +1,4 @@
-﻿;开机运行目录 C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
-SetCapsLockState, AlwaysOff
+﻿SetCapsLockState, AlwaysOff
 ;***************************模拟鼠标控制*****************************
     ;|+=======================================================+|
     ;||                                                       ||
@@ -130,7 +129,7 @@ SetCapsLockState, AlwaysOff
     ;||                热键 caps + 9                          ||
     ;|+=======================================================+|
         #if
-            CapsLock & 9::
+            CapsLock & 6::
                 bracketAutoCpOn := !bracketAutoCpOn
         Return
         #if bracketAutoCpOn
@@ -138,6 +137,11 @@ SetCapsLockState, AlwaysOff
             $(::
                 send,{(}
                 send,{)}
+                send,{left}
+            return
+            $[::
+                send,{[}
+                send,{]}
                 send,{left}
             return
             ${::
@@ -174,8 +178,8 @@ SetCapsLockState, AlwaysOff
     KeyWait, a
 
 ;滚动当前鼠标下的窗口的滚动条
-    GroupAdd,canNotWheel,ahk_class Windows.UI.Core.CoreWindow;开始菜单
-    GroupAdd,canNotWheel,ahk_class ApplicationFrameWindow;uwp应用
+    GroupAdd,canNotWheel,ahk_class Windows.UI.Core.CoreWindow ;开始菜单
+    GroupAdd,canNotWheel,ahk_class ApplicationFrameWindow ;uwp应用
     GroupAdd,canNotWheel,ahk_class HH Parent
     #IfwinNotActive,ahk_group canNotWheel
     #IfWinActive,ahk_group canNotWheel
@@ -341,7 +345,7 @@ SetCapsLockState, AlwaysOff
                 Send, ^w
         }                                                                                                                                    ;|
     return
-    ;数字键 热键F7
+;数字键热键F7
         #if
             F7::
             ONOFF := !ONOFF
@@ -363,13 +367,11 @@ SetCapsLockState, AlwaysOff
         }
         #if
 
-    ;鼠标控制音量
-        ; XButton1::Volume_Up
-        ; XButton2::Volume_Down
-        XButton2 & WheelDown::send,{Volume_Down}
-        XButton2 & WheelUp::send,{Volume_Up}
-        CapsLock & PgUp::send,{Volume_Up}
-        CapsLock & PgDn::send,{Volume_Down}
+;鼠标控制音量
+    XButton2 & WheelDown::send,{Volume_Down}
+    XButton2 & WheelUp::send,{Volume_Up}
+    CapsLock & PgUp::send,{Volume_Up}
+    CapsLock & PgDn::send,{Volume_Down}
 
 ;/********************扩展的快捷方式***********************/
     ;|+=======================================================+|
@@ -390,17 +392,6 @@ SetCapsLockState, AlwaysOff
     ;||      !#c                |         拾色器              ||
     ;||   Cap &  r              |         键盘录制            ||
     ;|+=======================================================+|
-
-    ;cmder
-    ; #t::
-    ;     send ^c
-    ;     sleep,200
-    ;     clipboard=cd %clipboard% ;%null%
-    ;     tooltip,%clipboard%
-    ;     sleep,500
-    ;     tooltip,
-    ;     run cmder\Cmder.exe
-    ; Return
     ;打开www文件夹
     CapsLock & z::
         www=D:\msy\code\node\HTML\工具箱
@@ -421,189 +412,16 @@ SetCapsLockState, AlwaysOff
             tooltip,
         return
 
-;/**********************简单实用的剪切板*******************/
-    ;|+=======================================================+|
-    ;||    *  支持拷贝多段文字                                ||
-    ;||    *  顺序粘贴                                        ||
-    ;|+-------------------------+-----------------------------+|
-    ;||        #0：             |            清空             ||
-    ;||        ^c               |            复制             ||
-    ;||        #v               |          依次粘贴           ||
-    ;||        #]               |       依次粘贴，但顺序相反  ||
-    ;|+=======================================================+|
-
-    ; handleClip(action)
-    ; {
-    ;     global static AddNextNum
-    ;     global static GetNextNum
-    ;     global static HighestNum
-    ;     global static getprevnum
-    ;     global static highest1
-    ;     global static ClipArray
-    ;     global static ClipArray1
-    ;     global static ClipArray2
-    ;     global static ClipArray3
-    ;     global static ClipArray4
-    ;     global static ClipArray5
-    ;     global static ClipArray6
-    ;     global static ClipArray7
-    ;     global static ClipArray8
-    ;     global static ClipArray9
-    ;     global static ClipArray10
-    ;     global static ClipArray11
-    ;     global static ClipArray12
-    ;     global static ClipArray13
-    ;     global static ClipArray14
-    ;     global static ClipArray15
-    ;     global static ClipArray16
-    ;     global static ClipArray17
-    ;     global static ClipArray18
-    ;     global static ClipArray19
-    ;     global static ClipArray20
-    ;     global static ClipArray21
-    ;     global static ClipArray22
-    ;     global static ClipArray23
-    ;     global static ClipArray24
-    ;     global static ClipArray25
-    ;     global static ClipArray26
-    ;     global static ClipArray27
-    ;     global static ClipArray28
-    ;     global static ClipArray29
-    ;     global static ClipArray30
-
-    ;     if (action = "save")
-    ;     {
-    ;         if (AddNextNum < 30)
-    ;         {
-    ;             AddNextNum += 1 ;
-    ;         }
-    ;         else
-    ;         {
-    ;             AddNextNum := 1 ;
-    ;         }
-
-
-    ;         if (HighestNum < 30)
-    ;         {
-    ;             HighestNum += 1 ;
-    ;         }
-
-    ;         GetNextNum := AddNextNum ;
-    ;         ClipArray%AddNextNum% := Clipboard
-    ;         highest1 := highestnum + 1
-    ;         getprevnum := 1
-
-    ;     }
-    ;     else if ((action = "get") OR (action = "roll"))
-    ;     {
-    ;         if (GetNextNum != 0)
-    ;         {
-    ;             if (action = "roll")
-    ;             {
-    ;                 Send, ^z
-    ;             }
-    ;             Clipboard := ClipArray%GetNextNum%
-    ;             if (GetNextNum > 1)
-    ;             {
-    ;                 GetNextNum -= 1 ;
-    ;                 getprevnum++
-    ;             }
-    ;             else
-    ;             {
-    ;                 getprevnum := 1
-    ;                 GetNextNum := HighestNum
-
-    ;             }
-    ;             Send, ^v
-    ;             }
-    ;     }
-    ;     else if (action = "get-reverse")
-    ;     {
-    ;         if (GetNextNum != 0)
-    ;         {
-
-    ;             Clipboard := ClipArray%getprevnum%
-    ;             if (GetNextNum > 1)
-    ;             {
-    ;                 GetNextNum -= 1 ;
-    ;                 getprevnum++
-    ;             }
-    ;             else
-    ;             {
-    ;                 getprevnum := 1
-    ;                 GetNextNum := HighestNum
-
-    ;             }
-    ;             Send, ^v
-    ;         }
-    ;     }
-
-    ;     else if (action = "rollforward")
-    ;     {
-    ;         if (GetNextNum != 0)
-    ;         {
-    ;             Send, ^z
-    ;             if (GetNextNum < HighestNum)
-    ;             {
-    ;                 GetNextNum += 1 ;
-    ;             }
-    ;             else
-    ;             {
-    ;                 GetNextNum := 1
-    ;             }
-    ;             Clipboard := ClipArray%GetNextNum%
-    ;             Send, ^v
-    ;         }
-    ;     }
-    ;     else if (action = "clear")
-    ;     {
-
-    ;         GetNextNum := 0
-    ;         AddNextNum := 0
-    ;         HighestNum := 0
-    ;         getprevnum := 0
-    ;     }
-    ; }
-    ; ;控键
-    ; #0::
-    ; handleClip("clear")
-    ; return
-
-    ; ^c::
-    ; suspend on
-    ; Send, ^c
-    ; suspend off
-    ; handleClip("save")
-
-    ; return
-
-    ; #v::
-    ;     handleClip("get-reverse")
-    ; return
-
-    ; #]::
-    ;     handleClip("get")
-    ; return
-    ; #/::
-    ;     clipboard =
-    ; return
-
-    ; #^\::
-    ;     handleClip("rollforward")`
-    ; return
-    ; ; end 剪切
-
 ; 媒体键增强
     >!>^Right::send,{Media_Next}
     >!>^Left::send,{Media_Prev}
     >!>^Space::send,{Media_Play_Pause}
 ; 扩展按键显示
-    MsgBox,  0, 扩展按键, 扩展按键开启成功, 0.2
-    #;::run KeyboardOnScreen.ahk
-    + & esc::!F4
+    ; MsgBox,  0, 扩展按键, 扩展按键开启成功, 0.2
+    ; #;::run KeyboardOnScreen.ahk
 ; 加入左键连点器
     +F11::
-    MsgBox,  0, 左键连点器, 左键连点器开启成功, 0.2
+    ; MsgBox,  0, 左键连点器, 左键连点器开启成功, 0.2
         Sleep,300
         loop
         {
@@ -617,17 +435,18 @@ SetCapsLockState, AlwaysOff
     return
     +XButton1::
             Sleep,300
-            MsgBox,  0, XButton1连点器, XButton1连点器开启成功, 0.2
+            ; MsgBox,  0, XButton1连点器, XButton1连点器开启成功, 0.2
             loop
             {
                 Send,{XButton1}
                 Sleep,300
                 if GetKeyState("F11")
                 {
-                    MsgBox,  0, XButton1连点器, XButton1连点器关闭成功, 0.2
+                    ; MsgBox,  0, XButton1连点器, XButton1连点器关闭成功, 0.2
                     break
                 }
             }
         return
-
+;额外补充
 ::email::1460083332@qq.com
++esc::!F4

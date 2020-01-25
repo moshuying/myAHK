@@ -11,9 +11,9 @@ windows执行以下步骤,复制粘贴到powershell中执行即可
 
 >国内用户把clone仓库链接中的hub换成ee即可
 
+<!-- TODO 完善简介 -->
+
 ```sh
-choco install git 
+#win
 git clone https://github.com/moshuying/myAHK.git
-choco install jivkok.autohotkey
-main.ahk
 ```
