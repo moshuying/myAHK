@@ -1,6 +1,6 @@
 # ahk键盘增强✨✨✨
 
-ahk的一个键盘增强脚本,仅在`winwods`下可用
+ahk的一个键盘增强脚本,仅在`winwods`下可用,长期更新
 
 > 首先感谢ahk的大神们,这个工具能极大地增加生产力
 
@@ -37,7 +37,7 @@ easyWork.ahk
 |home| caps + h|home键,移动到行首|
 |end|caps + n|end键,移动到行末(这个结合shift + caps + h可以飞速选中一行,选中后caps + i向上多选,caps + j下下多选)|
 |上下左右 👏| caps + ijkl| 超级好用上下左右,我想你也不喜欢每次移动光标时都把手挪动一大截吧,尤其是写代码灵感来的瞬间|
-| 切换大小写 | caps + a |将capslock键改成了caps,用这个组合键来充当切换大小写的功能|
+| 切换大小写 | caps + a |将capslock键改成了caps,用这个组合键来切换大小写|
 |鼠标滚轮增加音量(有鼠标侧键才可以使用,XButon2是靠前的侧键)|XButton2 + 向鼠标前方滚动||
 |鼠标滚轮减少音量|XButton2 + 向鼠标后方滚动||
 |键盘增加音量|caps + pgup ||
@@ -54,3 +54,5 @@ easyWork.ahk
 |=| caps + ;||
 |+| caps + '||
 |关闭窗口|shift + esc|等同于alt + f4|
+
+长期更新,欢迎各路大神提issue
