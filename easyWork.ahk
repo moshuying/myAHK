@@ -124,6 +124,21 @@
     MouseClick, right,,, 1, 0, U  ; Release the mouse button.
     return
 
+;/****************滚动当前鼠标下的窗口的滚动条********************/
+    GroupAdd,canNotWheel,ahk_class Windows.UI.Core.CoreWindow ;开始菜单
+    GroupAdd,canNotWheel,ahk_class ApplicationFrameWindow ;uwp应用
+    GroupAdd,canNotWheel,ahk_class HH Parent
+    #IfwinNotActive,ahk_group canNotWheel
+    #IfWinActive,ahk_group canNotWheel
+    coordmode,Mouse,screen
+    WheelUp::
+    WheelDown::
+       MouseWheelSetp:=(A_ThisHotkey="WheelUp") ? 120 : -120
+       MouseGetPos, MWAW_x, MWAW_y
+       MWAW_Hwnd := DllCall( "WindowFromPoint", "int", MWAW_x, "int", MWAW_y )
+       SendMessage, 0x20A, MouseWheelSetp << 16, ( MWAW_y << 16 )|MWAW_x,, ahk_id %MWAW_Hwnd%
+       return
+    #If
 ;/*****************在非代码编辑器内实现括号补全*****************************/
     ;|+=======================================================+|
     ;||                热键 caps + 9                          ||
@@ -165,8 +180,6 @@
 ;/**************************系统按键修改*****************************/
     ;|+=======================================================+|
     ;||       CapsLock & a      |       Caps                  ||
-    ;||             `           |       esc                   ||
-    ;||          esc            |        `                    ||
     ;|+=======================================================+|
 
     CapsLock & a::
@@ -177,21 +190,6 @@
         SetCapsLockState, AlwaysOn
     KeyWait, a
 
-;滚动当前鼠标下的窗口的滚动条
-    GroupAdd,canNotWheel,ahk_class Windows.UI.Core.CoreWindow ;开始菜单
-    GroupAdd,canNotWheel,ahk_class ApplicationFrameWindow ;uwp应用
-    GroupAdd,canNotWheel,ahk_class HH Parent
-    #IfwinNotActive,ahk_group canNotWheel
-    #IfWinActive,ahk_group canNotWheel
-    coordmode,Mouse,screen
-    WheelUp::
-    WheelDown::
-       MouseWheelSetp:=(A_ThisHotkey="WheelUp") ? 120 : -120
-       MouseGetPos, MWAW_x, MWAW_y
-       MWAW_Hwnd := DllCall( "WindowFromPoint", "int", MWAW_x, "int", MWAW_y )
-       SendMessage, 0x20A, MouseWheelSetp << 16, ( MWAW_y << 16 )|MWAW_x,, ahk_id %MWAW_Hwnd%
-       return
-    #If
 
 ;/***********************键盘编辑用的热键*****************************/
     ;|+=======================================================+|
@@ -209,8 +207,8 @@
     ;||    CapsLock & g         |         AppsKey             ||
     ;||    CapsLock & o         |         delete              ||
     ;||    CapsLock & p         |         BackSpace           ||
-    ;||    CapsLock & h         |         BackSpace           ||
-    ;||    CapsLock & n         |         BackSpace           ||
+    ;||    CapsLock & h         |         Home                ||
+    ;||    CapsLock & n         |         End                 ||
     ;|| CapsLock & shift & h    |         shift+home          ||
     ;|| CapsLock & shift & n    |         shift+end           ||
     ;|| CapsLock & alt & h      |         ctrl+home           ||
@@ -345,27 +343,27 @@
                 Send, ^w
         }                                                                                                                                    ;|
     return
-;数字键热键F7
-        #if
-            F7::
-            ONOFF := !ONOFF
-        Return
-        #if ONOFF
-        {
-            u::4
-            i::5
-            o::6
-            j::1
-            k::2
-            l::3
-            m::0
-            n::0
-            0::/
-            p::*
-            `;::-
-            /::+
-        }
-        #if
+    ;数字键热键F7
+            #if
+                F7::
+                ONOFF := !ONOFF
+            Return
+            #if ONOFF
+            {
+                u::4
+                i::5
+                o::6
+                j::1
+                k::2
+                l::3
+                m::0
+                n::0
+                0::/
+                p::*
+                `;::-
+                /::+
+            }
+            #if
 
 ;鼠标控制音量
     XButton2 & WheelDown::send,{Volume_Down}
@@ -402,6 +400,9 @@
         run %handnote%
     Return
 
+    CapsLock & c::
+        run calc.exe
+    Return
     ; 获取路径
         ^#c::
             send ^c
