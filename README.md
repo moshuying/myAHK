@@ -1,7 +1,7 @@
 # ahk键盘增强✨✨✨
 
 ahk的一个键盘增强脚本,仅在`winwods`下可用,长期更新
-
+[仓库链接](https://github.com/moshuying/myAHK)
 > 首先感谢ahk的大神们,这个工具能极大地增加生产力
 
 ## 功能简介
@@ -27,6 +27,8 @@ easyWork.ahk
 ## 功能概要
 
 **由于用`caps + a`替换了`capslock`功能,所以下表中的caps均指向capslock按键**
+
+
 | 简述 | 热键 | 详解 |
 | :--- | :--- | --- |
 |获取路径|win + ctrl + c|在文件浏览器下选中文件后直接复制路径|
