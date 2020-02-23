@@ -56,6 +56,6 @@ easyWork.ahk
 | ~ | caps + 2||
 |=| caps + ;||
 |+| caps + '||
-|关闭窗口|shift + esc|等同于alt + f4|
+|自动循环按键|按下ctrl + win + a 后随意按键(功能键暂不支持)|自动循环按ctrl + win + a 后的按键|
 
-长期更新,欢迎各路大神提issue
+长期更新,觉得有用麻烦点个star吧

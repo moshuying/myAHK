@@ -218,25 +218,6 @@
     ;||    CapsLock & ;         |            =                ||
     ;||    CapsLock & '         |            +                ||
     ;|+-------------------------------------------------------+|
-    ;||                      数字键                           ||
-    ;|+-------------------------+-----------------------------+|
-    ;||         F7              |         开启键              ||
-    ;|+-------------------------+-----------------------------+|
-    ;||        n/m              |            0                ||
-    ;||         j               |             1               ||
-    ;||         k               |             2               ||
-    ;||         l               |             3               ||
-    ;||         u               |             4               ||
-    ;||         i               |             5               ||
-    ;||         o               |             6               ||
-    ;||         7               |             7               ||
-    ;||         8               |             8               ||
-    ;||         9               |             9               ||
-    ;||         0               |             /               ||
-    ;||         p               |             *               ||
-    ;||         ;               |             -               ||
-    ;||         /               |             +               ||
-    ;|+-------------------------------------------------------+|
     ;||                      音量控制                         ||
     ;|+-------------------------+-----------------------------+|
     ;||         XButton1        |         Volume_Up           ||
@@ -334,36 +315,12 @@
     CapsLock & '::send,{+}
     ;!F4
     LCtrl & w::
-        if GetKeyState("alt")
-        {
+        if GetKeyState("alt"){
             Send, !{F4}
-        }
-        Else
-        {
-                Send, ^w
+        }Else{
+            Send, ^w
         }                                                                                                                                    ;|
     return
-    ;数字键热键F7
-            #if
-                F7::
-                ONOFF := !ONOFF
-            Return
-            #if ONOFF
-            {
-                u::4
-                i::5
-                o::6
-                j::1
-                k::2
-                l::3
-                m::0
-                n::0
-                0::/
-                p::*
-                `;::-
-                /::+
-            }
-            #if
 
 ;鼠标控制音量
     XButton2 & WheelDown::send,{Volume_Down}
@@ -403,26 +360,34 @@
     CapsLock & c::
         run calc.exe
     Return
-    ; 获取路径
-        ^#c::
-            send ^c
-            sleep,200
-            clipboard=%clipboard% ;%null%
-            tooltip,%clipboard%
-            sleep,500
-            tooltip,
-        return
-
+; 获取路径
+    ^#c::
+        send ^c
+        sleep,200
+        clipboard=%clipboard% ;%null%
+        tooltip,%clipboard%
+        sleep,500
+        tooltip,
+    return
 ; 媒体键增强
     >!>^Right::send,{Media_Next}
     >!>^Left::send,{Media_Prev}
     >!>^Space::send,{Media_Play_Pause}
-; 扩展按键显示
-    ; MsgBox,  0, 扩展按键, 扩展按键开启成功, 0.2
-    ; #;::run KeyboardOnScreen.ahk
-; 加入左键连点器
+; 加入自动连点器
+    ^#a::
+        Input,AUTOCLICK, L1 M
+        Sleep,300
+        loop
+        {
+            Send,{%AUTOCLICK%}
+            Sleep,70
+            if GetKeyState("F11")
+            {
+                break
+            }
+        }
+    Return
     +F11::
-    ; MsgBox,  0, 左键连点器, 左键连点器开启成功, 0.2
         Sleep,300
         loop
         {
@@ -434,20 +399,5 @@
             }
         }
     return
-    +XButton1::
-            Sleep,300
-            ; MsgBox,  0, XButton1连点器, XButton1连点器开启成功, 0.2
-            loop
-            {
-                Send,{XButton1}
-                Sleep,300
-                if GetKeyState("F11")
-                {
-                    ; MsgBox,  0, XButton1连点器, XButton1连点器关闭成功, 0.2
-                    break
-                }
-            }
-        return
 ;额外补充
 ::email::1460083332@qq.com
-+esc::!F4
