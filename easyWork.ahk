@@ -18,23 +18,13 @@
     JoyThresholdUpper := 50 + JoyThreshold
     JoyThresholdLower := 50 - JoyThreshold
     YAxisMultiplier = -1
-    SetTimer, WatchKeyboard, 10
+    ; SetTimer, WatchKeyboard, 10 ;默认启动
     Hotkey, d, ButtonLeft
     Hotkey, f, ButtonRight
     Hotkey, i,empty
     Hotkey, k,empty
     Hotkey, j,empty
     Hotkey, l,empty
-    Return
-
-    CapsLock & d::
-        SetTimer, WatchKeyboard,10
-        Hotkey, d, On
-        Hotkey, f, On
-        Hotkey, i, On
-        Hotkey, k, On
-        Hotkey, j, On
-        Hotkey, l, On
     Return
 
     CapsLock & f::
@@ -45,6 +35,16 @@
         Hotkey, k, Off
         Hotkey, j, Off
         Hotkey, l, Off
+    Return
+
+    CapsLock & d::
+        SetTimer, WatchKeyboard,10
+        Hotkey, d, On
+        Hotkey, f, On
+        Hotkey, i, On
+        Hotkey, k, On
+        Hotkey, j, On
+        Hotkey, l, On
     Return
 
     empty:
@@ -347,11 +347,8 @@
     ;||      !#c                |         拾色器              ||
     ;||   Cap &  r              |         键盘录制            ||
     ;|+=======================================================+|
-    ;打开www文件夹
-    CapsLock & z::
-        www=D:\msy\code\node\HTML\工具箱
-        run %www%
-    Return
+
+    ; 打开文件夹
     CapsLock & x::
         handnote=D:\msy\mygit
         run %handnote%
@@ -373,31 +370,5 @@
     >!>^Right::send,{Media_Next}
     >!>^Left::send,{Media_Prev}
     >!>^Space::send,{Media_Play_Pause}
-; 加入自动连点器
-    ^#a::
-        Input,AUTOCLICK, L1 M
-        Sleep,300
-        loop
-        {
-            Send,{%AUTOCLICK%}
-            Sleep,70
-            if GetKeyState("F11")
-            {
-                break
-            }
-        }
-    Return
-    +F11::
-        Sleep,300
-        loop
-        {
-            Send,{Click}
-            Sleep,70
-            if GetKeyState("F11")
-            {
-                break
-            }
-        }
-    return
 ;额外补充
 ::email::1460083332@qq.com
