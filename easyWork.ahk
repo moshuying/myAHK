@@ -348,7 +348,7 @@
     ;||   Cap &  r              |         键盘录制            ||
     ;|+=======================================================+|
 
-    ; 打开文件夹
+; 打开文件夹
     CapsLock & x::
         handnote=D:\msy\mygit
         run %handnote%
@@ -366,6 +366,20 @@
         sleep,500
         tooltip,
     return
+; 循环（重复）按键
+    ^#a::
+        Input,AUTOCLICK, L1 M
+        Sleep,300
+        loop
+        {
+            Send,{%AUTOCLICK%}
+            Sleep,70
+            if GetKeyState("F11")
+            {
+                break
+            }
+        }
+    Return
 ; 媒体键增强
     >!>^Right::send,{Media_Next}
     >!>^Left::send,{Media_Prev}

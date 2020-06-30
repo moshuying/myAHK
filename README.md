@@ -1,26 +1,36 @@
-# ahk键盘增强✨✨✨
-
-ahk的一个键盘增强脚本,仅在`winwods`下可用,长期更新
-[仓库链接](https://github.com/moshuying/myAHK)
-> 首先感谢ahk的大神们,这个工具能极大地增加生产力
-
-## 功能简介
+# [ahk键盘增强✨✨✨](https://github.com/moshuying/myAHK)
 
 myahk旨在增强windows下的键盘功能😎
 
+**首先感谢ahk的大神们,这个工具能极大地增加生产力**
 
-## 使用流程
+ahk的一个键盘增强脚本,仅在`winwods`下可用,长期更新 [仓库链接](https://github.com/moshuying/myAHK)
+
+### 2020/6/30日更新
+
+使用了小半年之后发现了一些问题，所以更新了一下
+
++ [x] 移除了连点器
++ [x] 移除了打开指定文件夹，在开始界面中显然更好用
++ [x] 已关闭默认打开键鼠(开机了之后会忘记关闭蒙蔽半天)
++ [ ] 预计的新特性，按键显示，此功能可以方便做教程
+
+## 安装
 
 windows执行以下步骤,💻复制粘贴到命令行中执行
 
->国内用户把clone仓库链接中的hub换成ee即可，两个仓库完全同步
-
+未安装git和ahk的用户可以在联网状态下使用一行命令安装
 ```sh
-git clone https://github.com/moshuying/myAHK.git
-# git clone https://gitee.com/moshuying/myAHK.git
-cd myAHK
-AutoHotkey39219
-easyWork.ahk
+Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'));choco install git;choco install autohotkey.install;git clone https://gitee.com/moshuying/myAHK.git;cd myAHK;.\easyWork.ahk;New-Item -ItemType SymbolicLink -Path "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup" -Name ".\easyWork.ahk.lnk" -Value ".\easyWork.ahk"
+```
+
+有ahk和git的用户可以自行按步骤安装
+[ahk下载地址](https://www.autohotkey.com/download/ahk-install.exe)
+```sh
+git clone https://gitee.com/moshuying/myAHK.git;
+cd myAHK;
+./easyWork.ahk;
+New-Item -ItemType SymbolicLink -Path "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup" -Name ".\easyWork.ahk.lnk" -Value ".\easyWork.ahk"
 ```
 
 
@@ -48,7 +58,7 @@ easyWork.ahk
 | 滚动当前鼠标下窗口的滚动条(向上滚动) | caps + ] | 滚动当前鼠标指向窗口的滚动条|
 |桌面切换(下一个)|win + ctrl + tab| 两个项目同时忙起来的时候换虚拟桌面用的 |
 |桌面切换(上一个)|win + ctrl + shift + tab||
-| 模拟鼠标(开) 默认开启 🌭| caps + d | 开启后按d对应左键,f右键,ijkl移动鼠标 |
+| 模拟鼠标(开) 默认关闭 🌭| caps + d | 开启后按d对应左键,f右键,ijkl移动鼠标 |
 | 模拟鼠标(关) | caps + f |  |
 | 括号补全(开) 默认关闭 |caps + 9 | 在一些代码编辑器内已经默认开启了代码补全,某些输入法也给了括号补全,这个自动补全仅作为备用默认关闭,第一次按组合键打开,再按组合键关闭|
 | 括号补全(关) |caps + 9||
