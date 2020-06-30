@@ -21,7 +21,7 @@ windows执行以下步骤,💻复制粘贴到命令行中执行
 
 未安装git和ahk的用户可以在联网状态下使用一行命令安装
 ```sh
-Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'));choco install git;choco install autohotkey.install;git clone https://gitee.com/moshuying/myAHK.git;cd myAHK;.\easyWork.ahk;New-Item -ItemType SymbolicLink -Path "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup" -Name ".\easyWork.ahk.lnk" -Value ".\easyWork.ahk"
+Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'));choco install git autohotkey.install -y;git clone https://gitee.com/moshuying/myAHK.git;cd myAHK;.\easyWork.ahk;New-Item -ItemType SymbolicLink -Path "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup" -Name ".\easyWork.ahk.lnk" -Value ".\easyWork.ahk"
 ```
 
 有ahk和git的用户可以自行按步骤安装
