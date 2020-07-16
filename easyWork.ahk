@@ -18,7 +18,7 @@
     JoyThresholdUpper := 50 + JoyThreshold
     JoyThresholdLower := 50 - JoyThreshold
     YAxisMultiplier = -1
-    ; SetTimer, WatchKeyboard, 10 ;默认启动
+    SetTimer, WatchKeyboard, off ;启动时关闭模拟鼠标
     Hotkey, d, ButtonLeft
     Hotkey, f, ButtonRight
     Hotkey, i,empty
