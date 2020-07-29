@@ -48,7 +48,6 @@ update_dock:
      task_id := ids%a_index%                 ; id of this window
      WinGetPos ,,, w, h, ahk_id %task_id%
      WinGetTitle,title,ahk_id %task_id%
-      MsgBox % "LiveWindows" <> "LiveWindows"
                                              ; try to match mediumsize dialog-boxes like alerts/copy or userdefined with #w
      if ( title <> "LiveWindows" and title <> "" and title <> " "  and (( w > 300 and h < 300 and h > 50 ) or watch_me_%task_id% = 1 ) )
      {              
