@@ -349,9 +349,13 @@
     ;|+=======================================================+|
 
 ; 打开文件夹
-    CapsLock & x::
-        handnote=D:\msy\mygit
-        run %handnote%
+    CapsLock & r::
+        FileSelectFolder, OutputVar, *D:\mygit, 3
+        OutputVar := RegExReplace(Folder, "\\$")  ; 移除默认的反斜杠, 如果存在.
+        if OutputVar =
+            MsgBox, You didn't select a folder.
+        else
+            MsgBox, You selected folder "%OutputVar%".
     Return
 
     CapsLock & c::
