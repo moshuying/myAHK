@@ -1,7 +1,20 @@
+// https://github.com/moshuying/myAHK
 // window 10 default powershell.exe in C:\Windows\System32\WindowsPowerShell\v1.0
-// gcc powershell.c -o powershell.exe
+// ./make.ps1
 #include <stdlib.h>
-int main(){
-  system("start \"PowerShell 7 (x64)\" /D \"c:\\\" \"C:\\Program Files\\PowerShell\\7\\pwsh.exe\"");
+// #include <string.h>
+int main(int argc,char *argv[]){
+  // for debug
+  // char str[500] = "echo 收到参数:";
+  // strcat(str,*argv);
+  // system(str);
+  // char num[16] = {0};
+  // char str2[500] = "echo 参数长度";
+  // itoa(argc,num,10);
+  // strcat(str2,num);
+  // system(str2);
+  system("cd C:\\Program Files\\PowerShell\\7");
+  system("pwsh.exe ");
+  system("pause");
   return 0;
 }
