@@ -5,8 +5,11 @@ myahk旨在增强windows下的键盘功能😎
 **首先感谢ahk的大神们,这个工具能极大地增加生产力**
 
 ahk的一个键盘增强脚本,仅在`winwods`下可用,长期更新 [仓库链接](https://github.com/moshuying/myAHK)
+## 2021/02/08 更新
 
-### 2020/6/30日更新
+准备加入mac版本啦，在使用了一段时间后发现没有myAhk实在是效率低下，常常因为键位问题打断代码思路，所以把这个东西也做一个mac版本
+
+### 2020/06/30 更新
 
 使用了小半年之后发现了一些问题，所以更新了一下
 
@@ -67,5 +70,6 @@ New-Item -ItemType SymbolicLink -Path "C:\Users\Administrator\AppData\Roaming\Mi
 |=| caps + ;||
 |+| caps + '||
 |自动循环按键|按下ctrl + win + a 后随意按键(功能键暂不支持)|自动循环按ctrl + win + a 后的按键|
-
+|获取路径|按下ctrl + win + c 后获取路径|
+|填充常用文本|输入 email 即可填入默认文本 修改代码最后一行改为自己常用的即可|
 长期更新,觉得有用麻烦点个star吧

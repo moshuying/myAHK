@@ -389,4 +389,4 @@
     >!>^Left::send,{Media_Prev}
     >!>^Space::send,{Media_Play_Pause}
 ;额外补充
-::email::1460083332@qq.com
+::email::默认文本填充
