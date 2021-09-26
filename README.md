@@ -2,6 +2,12 @@
 
 myahk旨在增强windows下的键盘功能😎
 
+## 2021/09/26 更新
+
+最近又从MAC换到Windows了，重新安装的过程中发现之前的方法并不是很轻松，所以我将代码打包成立可执行文件，直接运行该文件即可，不需要进行额外的操作。
+
+[下载地址](https://github.com/moshuying/myAHK/releases)
+
 **首先感谢ahk的大神们,这个工具能极大地增加生产力**
 
 ahk的一个键盘增强脚本,仅在`winwods`下可用,长期更新 [仓库链接](https://github.com/moshuying/myAHK)
