@@ -83,3 +83,5 @@ New-Item -ItemType SymbolicLink -Path "C:\Users\Administrator\AppData\Roaming\Mi
 |获取路径|按下ctrl + win + c 后获取路径|
 |填充常用文本|输入 email 即可填入默认文本 修改代码最后一行改为自己常用的即可|
 长期更新,觉得有用麻烦点个star吧
+
+
