@@ -23,7 +23,7 @@ Run, %MyListBox%,, UseErrorLevel
 if (ErrorLevel = "ERROR")
     MsgBox Could not launch the specified file.  Perhaps it is not associated with anything.
 return
-
+; 测试
 GuiClose:
 GuiEscape:
 ExitApp
