@@ -322,31 +322,11 @@
         }                                                                                                                                    ;|
     return
 
-;鼠标控制音量
+;鼠标键盘控制音量
     XButton2 & WheelDown::send,{Volume_Down}
     XButton2 & WheelUp::send,{Volume_Up}
     CapsLock & PgUp::send,{Volume_Up}
     CapsLock & PgDn::send,{Volume_Down}
-
-;/********************扩展的快捷方式***********************/
-    ;|+=======================================================+|
-    ;||       CapsLock & c      |           calc              ||
-    ;||       caps+alt+s        |         sublime text        ||
-    ;||         win+t           |             cmder           ||
-    ;||         win+f           |         everything          ||
-    ;||         ^#f             |         fastcopy            ||
-    ;||         ^#f             |         fastcopy            ||
-    ;|+-------------------------+-----------------------------+|
-    ;||                         |        YodaoDict            ||
-    ;||    CapsLock & F9        |        radar                ||
-    ;||                         |        BaiduSnapshot        ||
-    ;|+-------------------------+-----------------------------+|
-    ;||   CapsLock & z          |        website目录          ||
-    ;||   CapsLock & x          |         我的手册            ||
-    ;||      ^#c                |         获取路径            ||
-    ;||      !#c                |         拾色器              ||
-    ;||   Cap &  r              |         键盘录制            ||
-    ;|+=======================================================+|
 
 ; 打开文件夹
     CapsLock & r::
@@ -373,13 +353,16 @@
 ; 循环（重复）按键
     ^#a::
         Input,AUTOCLICK, L1 M
+        ToolTip, 连续点击{%AUTOCLICK%}键中，按右Shift取消连点
+        SetTimer, RemoveToolTip, -1000
         Sleep,300
         loop
         {
             Send,{%AUTOCLICK%}
             Sleep,70
-            if GetKeyState("F11")
+            if GetKeyState("RShift","P") 
             {
+                SetTimer, RemoveToolTip, -10
                 break
             }
         }
@@ -390,3 +373,6 @@
     >!>^Space::send,{Media_Play_Pause}
 ;额外补充
 ::email::默认文本填充
+RemoveToolTip:
+ToolTip
+return
