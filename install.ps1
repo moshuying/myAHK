@@ -7,7 +7,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/in
 choco install git autohotkey.install -y;
 
 # 下载代码
-git clone https://gitee.com/moshuying/myAHK.git;
+git clone https://gitee.com/moshuying/myAHK.git --depth=1;
 cd myAHK;
 .\easyWork.ahk;
 
