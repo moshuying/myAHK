@@ -1,5 +1,6 @@
 ﻿Gui, GuiName:New ,+AlwaysOnTop +Resize -SysMenu +ToolWindow 
 WinSet, Transparent, EEAA99 150, WinTitle
+
 ; Gui, Show, Center
 Gui, Add, ListBox,Sort,Sort
 
