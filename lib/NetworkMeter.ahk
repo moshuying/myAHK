@@ -5,6 +5,7 @@ Process, Priority,, High
 OnExit, Quit 
 oRC := 0, oWC := 0
 
+
 ; Run, diskperf.exe -y   ; Execute it once to enable Disk Performance monitoring. 
 
 SetTimer, HDD_Monitor, ;500
