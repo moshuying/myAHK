@@ -19,6 +19,13 @@
     JoyThresholdLower := 50 - JoyThreshold
     YAxisMultiplier = -1
     SetTimer, WatchKeyboard, off ;启动时关闭模拟鼠标
+    Hotkey, d, ButtonLeft
+    Hotkey, f, ButtonRight
+    Hotkey, i, empty
+    Hotkey, k, empty
+    Hotkey, j, empty
+    Hotkey, l, empty
+
     Hotkey, d, Off
     Hotkey, f, Off
     Hotkey, i, Off
