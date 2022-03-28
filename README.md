@@ -47,25 +47,21 @@ ahk 的一个键盘增强脚本,仅在`winwods`下可用,长期更新 [仓库链
 
 > 好吧我找到了，那时候确实是传上来了的，时间是2019年5月6日，纪念一下自己写的远古代码
 
-## 安装
+## 普通安装
 
-windows 执行以下步骤,💻 复制粘贴到命令行中执行
+[下载安装包双击运行即可](https://github.com/moshuying/myAHK/releases)，如果您对这个脚本比较陌生，您可以看看下面的功能说明。
 
-未安装 git 和 ahk 的用户可以在联网状态下使用一行命令安装
 
-```sh
-Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'));choco install git autohotkey.install -y;git clone https://gitee.com/moshuying/myAHK.git;cd myAHK;.\easyWork.ahk;New-Item -ItemType SymbolicLink -Path "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup" -Name ".\easyWork.ahk.lnk" -Value ".\easyWork.ahk"
-```
+## 从源码安装
 
-有 ahk 和 git 的用户可以自行按步骤安装
-[ahk 下载地址](https://www.autohotkey.com/download/ahk-install.exe)
+克隆源代码，并从myahk官网[下载ahk运行环境](https://www.autohotkey.com/)，运行`easyWork.ahk`即可。
 
-```sh
-git clone https://gitee.com/moshuying/myAHK.git;
-cd myAHK;
-./easyWork.ahk;
-New-Item -ItemType SymbolicLink -Path "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup" -Name ".\easyWork.ahk.lnk" -Value ".\easyWork.ahk"
-```
+## 卸载
+
+普通安装的用户仅需从托盘关闭myAHK即可。
+
+从源码安装的用户退出脚本即可。
+
 
 ## 功能概要
 
