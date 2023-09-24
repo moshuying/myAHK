@@ -378,8 +378,6 @@ SetCapsLockState, AlwaysOff
     >!>^Right::send,{Media_Next}
     >!>^Left::send,{Media_Prev}
     >!>^Space::send,{Media_Play_Pause}
-;额外补充
-::email::默认文本填充
-RemoveToolTip:
-ToolTip
-return
+; MacOS 键盘映射
+^!q::
+  Send, {LWin up}{l up}
